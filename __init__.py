@@ -10,8 +10,8 @@ LOGGER = getLogger(__name__)
 class NumberGuessSkill(MycroftSkill):
 	def get_numerical_response(self, dialog):
 		while True:
-			rnit = self.get_response(dialog)	
-			return rnit
+			val = self.get_response(dialog)	
+			return val
 	@intent_handler(IntentBuilder("").require("plan").optionally("going").optionally("Suggest"))
 	def handle_start_game_intent(self, message):
 		self.speak_dialog("start")
