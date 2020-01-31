@@ -19,7 +19,7 @@ class NumberGuessSkill(MycroftSkill):
 		source = self.get_numerical_response("get.source")
 		# get upper bound
 		destination = self.get_numerical_response("get.destination")
-		answer = self.speak(lowerBound, upperBound)
+		answer = self.speak(source, destination)
 
 
 	def stop(self):
