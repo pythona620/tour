@@ -19,8 +19,8 @@ class NumberGuessSkill(MycroftSkill):
 		source = self.get_numerical_response("get.source")
 		# get upper bound
 		destination = self.get_numerical_response("get.destination")
-		answer = self.speak(source, destination)
-
+		answer =(source + destination)
+		self.speak(answer)
 
 	def stop(self):
 		pass
